@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,7 +130,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="aMath.cpp" />
+    <ClCompile Include="object.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textureAtlas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aMath.h" />
+    <ClInclude Include="bomb.h" />
+    <ClInclude Include="displaytext.h" />
+    <ClInclude Include="fruit.h" />
+    <ClInclude Include="handler.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
